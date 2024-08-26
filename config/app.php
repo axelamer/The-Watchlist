@@ -52,8 +52,8 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://localhost'),
-    'proxy_url' => env('PROXY_URL'),
+    'url' => env('APP_URL', 'https://the-watchlist-git-main-axel-amers-projects.vercel.app'),
+    'proxy_url' => env('PROXY_URL', 'https://the-watchlist-git-main-axel-amers-projects.vercel.app'),
 
     /*
     |--------------------------------------------------------------------------
