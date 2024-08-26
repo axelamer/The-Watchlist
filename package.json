@@ -4,7 +4,7 @@
     "scripts": {
         "dev": "vite",
         "build": "vite build",
-        "postinstall": "npm run build && php artisan config:cache && php artisan route:cache"
+        "postinstall": "npm run build && php artisan config:cache && php artisan route:cache && cp public/index.php api/index.php"
     },
     "devDependencies": {
         "@tailwindcss/forms": "^0.5.2",
