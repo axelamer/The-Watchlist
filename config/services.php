@@ -35,4 +35,8 @@ return [
         ],
     ],
 
+    'tmdb' => [
+        'api_key' => env('TMDB_API_KEY'),
+        'access_token' => env('TMDB_ACCESS_TOKEN'),
+    ],
 ];

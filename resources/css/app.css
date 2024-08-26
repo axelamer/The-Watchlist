@@ -1,0 +1,50 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Custom styles */
+body {
+    @apply bg-gray-100;
+}
+
+.movie-card {
+    @apply cursor-pointer transition-transform duration-300;
+}
+
+.movie-card img {
+    @apply transition-transform duration-300 aspect-ratio-2/3 object-cover;
+}
+
+.movie-card:hover img {
+    @apply scale-110;
+}
+
+.movie-details {
+    @apply flex flex-col justify-center items-start;
+}
+
+.movie-card {
+    transition: transform 0.2s;
+}
+
+.movie-card:hover {
+    transform: scale(1.05);
+}
+
+.movie-card img {
+    aspect-ratio: 2/3;
+    object-fit: cover;
+}
+
+#movie-modal {
+    transition: opacity 0.3s ease-in-out;
+}
+
+#movie-modal.flex {
+    opacity: 1;
+}
+
+#movie-modal.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
